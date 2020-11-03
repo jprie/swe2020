@@ -14,6 +14,7 @@ public class AnimalFarm {
 		// implemented new feature
 		animals.forEach(System.out::println);
 
+		// new version of feature stream api
 	}
 
 }
