@@ -11,10 +11,8 @@ public class AnimalFarm {
 															new Animal("Katze", 10, 5.4, "Mammal"),
 															new Animal("Hund", 15, 10.5, "Mammal")));
 		
-		for (Animal a : animals) {
-			
-			System.out.println(a);
-		}
+		// implemented new feature
+		animals.forEach(System.out::println);
 
 	}
 
