@@ -15,7 +15,11 @@ public class AnimalFarm {
 		animals.forEach(System.out::println);
 
 		// new version of feature stream api
+
 		//colleague changed same line
+
+		// yet another version
+
 	}
 
 }
