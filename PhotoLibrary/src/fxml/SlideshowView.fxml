@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.SlideshowController">
+   <children>
+      <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Group>
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="326.0" fitWidth="400.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/IMG_5307.jpg" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D width="200.0" />
+                     </viewport>
+                  </ImageView>
+                  <ProgressIndicator fx:id="progressIndicator" layoutX="185.0" layoutY="128.0" />
+               </children>
+            </Group>
+            <ButtonBar buttonMinWidth="60.0" buttonOrder="U+">
+              <buttons>
+                  <Button fx:id="rewindButton" mnemonicParsing="false" onAction="#handleRewindButtonAction" text="&lt;" />
+                  <Button fx:id="playPauseButton" mnemonicParsing="false" onAction="#handlePlayPauseAction" text="||" />
+                <Button fx:id="forwardButton" mnemonicParsing="false" onAction="#handleForwardButtonAction" text="&gt;" />
+              </buttons>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
