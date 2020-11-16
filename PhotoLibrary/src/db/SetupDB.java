@@ -10,11 +10,11 @@ public class SetupDB {
 
 	public static void main(String[] args) {
 		
-		try (Connection con = DriverManager.getConnection("jdbc:derby:~/DB/NewPhotoDB; create=true; user=test; password=test;");
+		try (Connection con = DriverManager.getConnection("jdbc:derby:./NewPhotoDB; create=true; user=test; password=test;");
 				Statement stmt = con.createStatement()) {
 			
 //			stmt.execute("DROP TABLE Photo");
-			stmt.execute("DROP TABLE Photographer");
+//			stmt.execute("DROP TABLE Photographer");
 			stmt.execute("CREATE TABLE Photographer (id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,"
 					+ "first_name VARCHAR(30),"
 					+ "last_name VARCHAR(30))");
